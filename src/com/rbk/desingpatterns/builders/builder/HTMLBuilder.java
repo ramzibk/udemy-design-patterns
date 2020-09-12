@@ -1,8 +1,4 @@
-package com.rbk.desingpatterns.builder;
-
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
+package com.rbk.desingpatterns.builders.builder;
 
 
 public class HTMLBuilder {

@@ -1,4 +1,4 @@
-package com.rbk.desingpatterns.fluentBuilder;
+package com.rbk.desingpatterns.builders.fluentBuilder;
 
 class PersonBuilder<SELF extends PersonBuilder<SELF>> {
   protected Person person = new Person();

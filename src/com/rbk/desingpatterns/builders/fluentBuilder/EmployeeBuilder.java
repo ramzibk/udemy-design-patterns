@@ -1,4 +1,4 @@
-package com.rbk.desingpatterns.fluentBuilder;
+package com.rbk.desingpatterns.builders.fluentBuilder;
 
 public class EmployeeBuilder extends PersonBuilder<EmployeeBuilder> {
   public EmployeeBuilder worksAt(String position) {

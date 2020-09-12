@@ -1,4 +1,4 @@
-package com.rbk.desingpatterns.builder;
+package com.rbk.desingpatterns.builders.builder;
 
 public class BuilderDemo {
 	public static void main(String[] args) {

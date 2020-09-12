@@ -1,4 +1,4 @@
-package com.rbk.desingpatterns.builder;
+package com.rbk.desingpatterns.builders.builder;
 
 import java.util.ArrayList;
 import java.util.Collections;

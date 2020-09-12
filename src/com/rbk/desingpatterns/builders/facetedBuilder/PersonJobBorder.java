@@ -1,4 +1,4 @@
-package com.rbk.desingpatterns.facetedBuilder;
+package com.rbk.desingpatterns.builders.facetedBuilder;
 
 public class PersonJobBorder extends PersonBuilder {
 
