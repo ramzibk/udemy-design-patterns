@@ -1,25 +1,13 @@
 package com.rbk.desingpatterns.factories;
 
-enum CoordinteSystem {
-  CARTESIAN,
-  POLAR
-}
-
 public class Point {
   private double x, y;
 
-  public Point(double a, double b, CoordinteSystem cs) {
-    switch (cs) {
-      case CARTESIAN:
-        this.x = x;
-        this.y = y;
-        break;
-      case POLAR:
-        this.x = a*Math.cos(b);
-        this.y = a*Math.sin(b);
-        break;
-      default:
-    }
+  // if the constructor is left public, there would be more options
+  // to construct a Point other than the ones we want to define
+  private Point(double x, double y) {
+    this.x = x;
+    this.y = y;
   }
 
   @Override
@@ -28,6 +16,17 @@ public class Point {
         "x=" + x +
         ", y=" + y +
         '}';
+  }
+
+  // the class is internal, so that it can access the private Point constructor
+  public static class Factory {
+    public static Point newCartesianPoint(double x, double y){
+      return new Point(x, y);
+    }
+
+    public static Point newPolarPoint(double rho, double theta){
+      return new Point(rho*Math.cos(theta), rho*Math.sin(theta));
+    }
   }
 }
 
